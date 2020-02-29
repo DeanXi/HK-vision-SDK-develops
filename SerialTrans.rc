@@ -1,0 +1,312 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SerialTrans.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\SerialTrans.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 SerialTrans"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "SerialTrans 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2009",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_SERIALTRANS_DIALOG DIALOGEX 0, 0, 634, 425
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "激光照明平台（UDP）"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_SERIAL_TYPE,62,361,33,37,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "串口类型",IDC_STATIC,25,364,33,8
+    COMBOBOX        IDC_COMBO_CHAN,132,361,33,75,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_DATA_SEND,22,385,144,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "发送",IDC_BUTTON_SEND,173,385,32,14
+    CONTROL         "IPAddress1",IDC_IPADDRESS_DEV,"SysIPAddress32",WS_TABSTOP,111,24,83,13
+    EDITTEXT        IDC_EDIT_PORT,56,109,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_USER,111,65,83,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PWD,111,86,83,13,ES_CENTER | ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "Login",IDC_BUTTON_LOGIN,18,149,61,31
+    LTEXT           "Infrared Device IP：",IDC_STATIC,19,26,84,8
+    LTEXT           "发送端口",IDC_STATIC,19,112,33,8
+    LTEXT           "User Name：",IDC_STATIC,19,68,52,8
+    LTEXT           "Password:",IDC_STATIC,19,90,39,8
+    LTEXT           "发送接口",IDC_STATIC,109,132,33,8
+    COMBOBOX        IDC_COMBO_INTERFACE,149,131,72,36,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "HEX",IDC_RADIO_HEX,"Button",BS_AUTORADIOBUTTON,194,362,33,8
+    LTEXT           "编码",IDC_STATIC,174,362,16,8
+    LTEXT           "通道号",IDC_STATIC,100,363,27,8
+    PUSHBUTTON      "建立透明通道",IDC_BUTTON_SERIALSTART,18,223,58,44
+    PUSHBUTTON      "停止透明通道",IDC_BUTTON_SERIALSTOP,17,286,58,40,WS_GROUP | NOT WS_TABSTOP
+    PUSHBUTTON      "←",IDC_BUTTON_LEFT,91,245,26,26
+    PUSHBUTTON      "→",IDC_BUTTON_RIGHT,155,245,26,26
+    PUSHBUTTON      "↑",IDC_BUTTON_UP,123,212,27,28
+    PUSHBUTTON      "↓",IDC_BUTTON_DOWN,123,276,26,26
+    PUSHBUTTON      "↖",IDC_BUTTON_LU,91,213,27,28
+    PUSHBUTTON      "↗",IDC_BUTTON_RU,154,212,27,28
+    PUSHBUTTON      "↙",IDC_BUTTON_LD,91,275,26,26
+    PUSHBUTTON      "↘",IDC_BUTTON_RD,155,276,26,26
+    EDITTEXT        IDC_EDIT_imageport,149,110,58,14,ES_AUTOHSCROLL
+    LTEXT           "接收端口",IDC_STATIC,109,113,33,8
+    PUSHBUTTON      "开始接收",IDC_BUTTON_SETTED,197,37,22,43,NOT WS_VISIBLE
+    PUSHBUTTON      "指向拍摄",IDC_BUTTON_QH,573,24,41,26,NOT WS_VISIBLE | NOT WS_TABSTOP
+    PUSHBUTTON      "开始播放",IDC_BUTTON_OK,93,149,61,31
+    LTEXT           "通道号",IDC_STATIC,19,130,25,8
+    EDITTEXT        IDC_EDIT_IPCH,56,128,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "设置角度",IDC_BUTTON_set,350,40,53,55
+    PUSHBUTTON      "抓拍",IDC_BUTTON_CapImg,123,245,26,26
+    EDITTEXT        IDC_EDIT_ha,304,31,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_va,303,80,40,14,ES_AUTOHSCROLL
+    LTEXT           "水平角度",IDC_STATIC,264,43,33,8
+    LTEXT           "俯仰角度",IDC_STATIC,263,93,33,8
+    EDITTEXT        IDC_EDIT_hangle,304,52,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_vangle,303,101,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_zoom,305,180,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_setzoom,305,159,40,14,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    PUSHBUTTON      "变倍",IDC_BUTTON_setzoom,348,159,81,23
+    LTEXT           "变倍值",IDC_STATIC,264,162,25,8
+    GROUPBOX        "串口配置",IDC_STATIC,16,347,212,61,WS_GROUP
+    CONTROL         "红外相机",IDC_RADIO_infraredcam,"Button",BS_AUTORADIOBUTTON | WS_GROUP,167,153,48,10
+    CONTROL         "可见光相机",IDC_RADIO_visiblelightcam,"Button",BS_AUTORADIOBUTTON,167,168,56,10
+    LTEXT           "回传值",IDC_STATIC,264,182,25,8
+    GROUPBOX        "云台方位",IDC_STATIC,247,19,284,182
+    CONTROL         "",IDC_IPADDRESS_DEV2,"SysIPAddress32",WS_TABSTOP,111,46,83,13
+    LTEXT           "Optical  Device IP：",IDC_STATIC,19,48,81,8
+    GROUPBOX        "网络配置",IDC_STATIC,14,12,213,182
+    GROUPBOX        "云台控制",IDC_STATIC,84,203,145,131
+    COMBOBOX        IDC_COMBO_PIC_TYPE,91,313,31,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_JPG_SIZE,132,313,31,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_JPG_QUALITY,168,313,31,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_FOCUS,304,138,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_SETFOCUS,304,120,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "聚焦",IDC_BUTTON_FOCUS,348,120,82,23
+    LTEXT           "聚焦值",IDC_STATIC,264,122,25,8
+    LTEXT           "回传值",IDC_STATIC,264,142,25,8
+    GROUPBOX        "JPEG参数",IDC_STATIC_JPGPARA,126,304,80,25
+    PUSHBUTTON      "连续抓拍",IDC_BUTTON_inscap,183,243,42,38
+    LTEXT           " F3 查看快捷键",IDC_STATIC,570,410,57,8
+    PUSHBUTTON      "开始跟踪",IDC_BUTTON_starttrace,451,113,50,30
+    PUSHBUTTON      "停止跟踪",IDC_BUTTON_stoptrace,449,153,50,30
+    PUSHBUTTON      "打开激光",IDC_BUTTON_openlaser,289,213,56,30
+    PUSHBUTTON      "关闭激光",IDC_BUTTON_closelaser,294,257,56,30
+    PUSHBUTTON      "光斑-",IDC_BUTTON_addlaserarea,362,211,56,30
+    PUSHBUTTON      "光斑+",IDC_BUTTON_minuslaserarea,361,257,56,30
+    PUSHBUTTON      "测距",IDC_BUTTON_distance,556,88,50,14
+    PUSHBUTTON      "变焦+",IDC_BUTTON_focusup,419,50,50,14
+    PUSHBUTTON      "变焦-",IDC_BUTTON_focusdown,420,78,50,14
+    PUSHBUTTON      "变倍+",IDC_BUTTON_addzoom,476,52,50,14
+    PUSHBUTTON      "变倍-",IDC_BUTTON_lesszoom,479,77,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "FileDescription", "SerialTrans Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "SerialTrans"
+            VALUE "LegalCopyright", "版权所有 (C) 2009"
+            VALUE "OriginalFilename", "SerialTrans.EXE"
+            VALUE "ProductName", "SerialTrans 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SERIALTRANS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 627
+        TOPMARGIN, 9
+        BOTTOMMARGIN, 418
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SERIALTRANS_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_SERIAL_TYPE, 0x403, 4, 0
+0x3332, 0x0032, 
+    IDC_COMBO_SERIAL_TYPE, 0x403, 4, 0
+0x3834, 0x0035, 
+    IDC_COMBO_INTERFACE, 0x403, 19, 0
+0x454e, 0x5f54, 0x5644, 0x5f52, 0x6553, 0x6972, 0x6c61, 0x6553, 0x646e, 
+"\000" 
+    IDC_COMBO_INTERFACE, 0x403, 25, 0
+0x454e, 0x5f54, 0x5644, 0x5f52, 0x6553, 0x646e, 0x6f54, 0x6553, 0x6972, 
+0x6c61, 0x6f50, 0x7472, "\000" 
+    IDC_COMBO_PIC_TYPE, 0x403, 9, 0
+0x504a, 0x4745, 0xbccd, 0xacc6, "\000" 
+    IDC_COMBO_PIC_TYPE, 0x403, 8, 0
+0x4d42, 0xcd50, 0xc6bc, 0x00ac, 
+    IDC_COMBO_JPG_SIZE, 0x403, 4, 0
+0x4943, 0x0046, 
+    IDC_COMBO_JPG_SIZE, 0x403, 5, 0
+0x4351, 0x4649, "\000" 
+    IDC_COMBO_JPG_SIZE, 0x403, 3, 0
+0x3144, "\000" 
+    IDC_COMBO_JPG_SIZE, 0x403, 5, 0
+0x5855, 0x4147, "\000" 
+    IDC_COMBO_JPG_SIZE, 0x403, 5, 0
+0x5653, 0x4147, "\000" 
+    IDC_COMBO_JPG_SIZE, 0x403, 7, 0
+0x4448, 0x3237, 0x7030, "\000" 
+    IDC_COMBO_JPG_SIZE, 0x403, 4, 0
+0x4756, 0x0041, 
+    IDC_COMBO_JPG_SIZE, 0x403, 5, 0
+0x5658, 0x4147, "\000" 
+    IDC_COMBO_JPG_SIZE, 0x403, 7, 0
+0x4448, 0x3039, 0x7030, "\000" 
+    IDC_COMBO_JPG_QUALITY, 0x403, 5, 0
+0xeed7, 0xc3ba, "\000" 
+    IDC_COMBO_JPG_QUALITY, 0x403, 5, 0
+0xcfbd, 0xc3ba, "\000" 
+    IDC_COMBO_JPG_QUALITY, 0x403, 5, 0
+0xbbd2, 0xe3b0, "\000" 
+    0
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\SerialTrans.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
